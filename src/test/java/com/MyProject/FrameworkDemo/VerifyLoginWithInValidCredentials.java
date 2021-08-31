@@ -23,7 +23,5 @@ public class VerifyLoginWithInValidCredentials extends MyProjectBase{
 	public void verifyLogin() {
 		homePage.login("Selenium", "Test@1234");
 		homePage.clickOnForgotPasswordLink();
-		
-
 	}
 }

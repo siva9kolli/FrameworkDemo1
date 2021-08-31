@@ -6,12 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.MyProject.FrameworkDemo.CommonActions;
+
 public class HomePage {
 	private WebDriver driver;
+	public CommonActions commonActions;
 	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
+		commonActions = new CommonActions();
 	}
 	
 	@FindBy(name = "username") WebElement usernameInputbox;
@@ -23,9 +27,13 @@ public class HomePage {
 	
 	
 	public void login(String userName, String password) {
-		usernameInputbox.sendKeys(userName);
-		passwordInputbox.sendKeys(password);
-		loginButton.click();
+//		usernameInputbox.sendKeys(userName);
+//		passwordInputbox.sendKeys(password);
+//		loginButton.click();
+		commonActions.typeInInputBox(usernameInputbox, userName);
+		commonActions.typeInInputBox(passwordInputbox, password);
+		commonActions.clickOnElement(loginButton);
+		
 	}
 	
 	public WebElement getLink() {
