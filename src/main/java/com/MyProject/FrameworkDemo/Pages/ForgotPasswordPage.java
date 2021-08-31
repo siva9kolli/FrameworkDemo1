@@ -6,9 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ForgotPasswordPage {
+	public HomePage homePage;
 	
 	public ForgotPasswordPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		homePage = new HomePage(driver);
 	}
 	
 	@FindBy(xpath = "//h1[text()='Customer Lookup']")
@@ -20,6 +22,7 @@ public class ForgotPasswordPage {
 	
 	
 	public boolean isDisplayedCustomerLookUpHeading() {
+		homePage.getLink().isDisplayed();
 		return customerLookUpHeading.isDisplayed();
 	}
 	
