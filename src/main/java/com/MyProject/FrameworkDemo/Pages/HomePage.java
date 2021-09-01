@@ -1,5 +1,6 @@
 package com.MyProject.FrameworkDemo.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,12 +31,40 @@ public class HomePage {
 	private WebElement forgotPasswordLink;
 	
 	
-	
 	public void login(String userName, String password) {
-		commonActions.typeInInputBox(usernameInputbox, userName);
-		commonActions.typeInInputBox(passwordInputbox, password);
-		commonActions.clickOnElement(loginButton);
+//		commonActions.typeInInputBox(usernameInputbox, userName);
+//		commonActions.typeInInputBox(passwordInputbox, password);
+//		commonActions.clickOnElement(loginButton);
+		sum(12,23);
+		clickOnElement("//7er34");
+		clickOnElement(By.id("123432"));
+		clickOnElement(driver.findElement(By.name("32423")));
 		
+		
+	}
+	
+	public Integer sum(int a, int b) {
+		return a+b;
+	}
+	
+	
+	public void clickOnElement1() {
+		WebElement ele = driver.findElement(By.xpath("//input[@value='Log In']"));
+		ele.click();
+	}
+	
+	public void clickOnElement(String xpathValue) {
+		WebElement ele = driver.findElement(By.xpath(xpathValue));
+		ele.click();
+	}
+	
+	public void clickOnElement(By locator) {
+		WebElement ele = driver.findElement(locator);
+		ele.click();
+	}
+	
+	public void clickOnElement(WebElement ele) {
+		ele.click();
 	}
 	
 	public WebElement getLink() {
@@ -45,6 +74,14 @@ public class HomePage {
 	
 	public void clickOnForgotPasswordLink() {
 		forgotPasswordLink.click();
+	}
+	
+	public String getTitleOfThePage() {
+		return driver.getTitle();
+	}
+	
+	public boolean isDispalyedLoginButton() {
+		return loginButton.isDisplayed();
 	}
 	
 }

@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5655" started-at="2021-08-31T10:56:20 IST" finished-at="2021-08-31T10:56:25 IST">
+  <suite name="Default suite" duration-ms="5518" started-at="2021-09-01T17:35:42 IST" finished-at="2021-09-01T17:35:47 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5655" started-at="2021-08-31T10:56:20 IST" finished-at="2021-08-31T10:56:25 IST">
-      <class name="com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials@711f39f9]" name="launchBrowser" is-config="true" duration-ms="2030" started-at="2021-08-31T10:56:18 IST" finished-at="2021-08-31T10:56:20 IST">
+    <test name="Default test" duration-ms="5518" started-at="2021-09-01T17:35:42 IST" finished-at="2021-09-01T17:35:47 IST">
+      <class name="com.MyProject.FrameworkDemo.VerifyPageNavigations">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyPageNavigations@3fd7a715]" name="launchBrowser" is-config="true" duration-ms="2039" started-at="2021-09-01T17:35:40 IST" finished-at="2021-09-01T17:35:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials@711f39f9]" name="launchApplication" is-config="true" duration-ms="4396" started-at="2021-08-31T10:56:20 IST" finished-at="2021-08-31T10:56:24 IST">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyPageNavigations@3fd7a715]" name="launchApplication" is-config="true" duration-ms="5385" started-at="2021-09-01T17:35:42 IST" finished-at="2021-09-01T17:35:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials@711f39f9]" name="initializePages" is-config="true" duration-ms="18" started-at="2021-08-31T10:56:24 IST" finished-at="2021-08-31T10:56:24 IST">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyPageNavigations@3fd7a715]" name="initializePages" is-config="true" duration-ms="23" started-at="2021-09-01T17:35:47 IST" finished-at="2021-09-01T17:35:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials@711f39f9]" name="verifyLogin" duration-ms="1139" started-at="2021-08-31T10:56:24 IST" finished-at="2021-08-31T10:56:25 IST">
+        <test-method status="PASS" signature="verifyPageNavigatedToHome()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyPageNavigations@3fd7a715]" name="verifyPageNavigatedToHome" duration-ms="72" started-at="2021-09-01T17:35:47 IST" finished-at="2021-09-01T17:35:47 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="killSession()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials@711f39f9]" name="killSession" is-config="true" duration-ms="100" started-at="2021-08-31T10:56:30 IST" finished-at="2021-08-31T10:56:30 IST">
+        </test-method> <!-- verifyPageNavigatedToHome -->
+        <test-method status="PASS" signature="killSession()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyPageNavigations@3fd7a715]" name="killSession" is-config="true" duration-ms="102" started-at="2021-09-01T17:35:52 IST" finished-at="2021-09-01T17:35:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killSession -->
-      </class> <!-- com.MyProject.FrameworkDemo.VerifyLoginWithInValidCredentials -->
-      <class name="com.MyProject.FrameworkDemo.VerifyForgotPassword">
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyForgotPassword@71bbf57e]" name="initializePages" is-config="true" duration-ms="3" started-at="2021-08-31T10:56:25 IST" finished-at="2021-08-31T10:56:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="verifyForgotPasswordStatus()[pri:0, instance:com.MyProject.FrameworkDemo.VerifyForgotPassword@71bbf57e]" name="verifyForgotPasswordStatus" duration-ms="73" started-at="2021-08-31T10:56:25 IST" finished-at="2021-08-31T10:56:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordStatus -->
-      </class> <!-- com.MyProject.FrameworkDemo.VerifyForgotPassword -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.MyProject.FrameworkDemo.VerifyPageNavigations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
